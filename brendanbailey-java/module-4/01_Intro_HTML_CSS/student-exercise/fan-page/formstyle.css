@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    background-color: rgba(29, 98, 201, 0.571);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 5px;
+
+  }
+  ul {
+    margin: 2;
+    padding: 1;
+  }
+  label, input {
+    display:block;
+  }
+  label {
+    margin-bottom: 10px;
+  }
+ 

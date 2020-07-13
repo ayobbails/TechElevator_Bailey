@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="formstyle.css">
+  </head>
+    <body>
+        <h1>Information Form</h1>
+        <form>
+        <label>     
+            <label for="Name">Name:</label>
+            <input id="Name" <input name="Name" type="text" required/>
+        </label>     
+        <label>    
+            <label for="Email Address">Email:</label>
+            <input id="Email Address" <input name="Email Address" type="text" required/>
+        </label>
+        <label>
+            <label for="birthday">Date of birth:</label>
+            <input type="date" id="birthday" name="birthday">
+        </label>
+        <label>
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color">
+        </label>
+        <label>
+            <label for="Number">Favorite Number:</label>
+            <input id="Number" <input name="Number" type="text" />
+        </label>
+        <label>
+            <label for="Confirmation">Correct?:</label>
+            <input type="checkbox" id="Confirmation" name="Confirmation" value="Correct">
+        </label>
+        <label>
+            <form action="http://localhost:3000/api/users/login" method="POST"></form>
+            <input type="submit" id="submit" name="submit" value="submit">
+        </label>
+    </form>
+    </body>
+</html>

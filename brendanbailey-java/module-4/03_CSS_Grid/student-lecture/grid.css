@@ -1,0 +1,38 @@
+.container {                                /* Style the elements in the class="container" */
+    display: grid;                          /* Use the grid layout */
+    grid-template-columns: 200px 1fr 200px; /* 3 columns - 1st and 3rd are 200px 2nd is 1fr or whatever is left on the screen */
+    grid-template-areas:
+    "header   header header"          /* 1st row format - assign the header to all the columns */
+    "menu-nav main   upcoming-events" /* 2nd row format - assign names to each column */
+    "footer   footer footer"          /* 3rd row format - assign name footer to all 3 columns */
+    ;
+    height: 100vh;       /* Set the height of the container to 100% of the view height (browser window) */
+    grid-gap: 10px;      /* Even sized gap between the rows and columns */
+}
+header {                 /* Style the header tag and its elements */
+    grid-area: header;   /* Place it in the grid area called header */
+}
+nav#menu-nav {           /* Style the element in the nav with id="name-menu" */
+    grid-area: menu-nav; /* Place it in the grid-area called menu-nav */ 
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: upcoming-events;
+}
+footer {
+    grid-area: footer;
+}
+@media (max-width: 768px) {     /* Change the style when the screen width is 768 pixels or less */
+    .container {                /* For anything in elements with the class="container" */
+        grid-template-areas:    /* Stack the grid areas instead of going across the screen */
+        "header"
+        "menu-nav"
+        "main"
+        "upcoming-events"
+        "footer"
+        ;
+        grid-template-columns: 1fr;     /* Change the grid to one column */
+    }
+}
