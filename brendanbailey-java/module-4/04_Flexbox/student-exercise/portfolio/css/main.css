@@ -7,10 +7,10 @@ body {
   display: grid;
 }
 body {
-  grid-template-columns: 1fr         1fr;
+  grid-template-columns: 300px      1fr           100px         1fr;
   grid-template-areas: 
-                        "left-panel  right-panel"
-                        ".           welcome    "
+                        "left-panel right-panel   right-panel   right-panel"
+                        "left-panel .             welcome       .          "
   ;
 }
 #left-panel {
@@ -31,7 +31,7 @@ body {
   background-color: #F7F7F7;
 }
 #left-panel h1 {
-
+  display: flex;
 }
 ul.social-icons {
   list-style-type: none;
@@ -39,9 +39,16 @@ ul.social-icons {
   padding: 0;
 }
 
-nav {}
+nav {
+  display: flex;
+  flex-grow: 1;
+}
 
-#right-panel {}
+#right-panel {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 
 /* YOU WON'T NEED TO CHANGE ANY STYLES BELOW THIS LINE */
 

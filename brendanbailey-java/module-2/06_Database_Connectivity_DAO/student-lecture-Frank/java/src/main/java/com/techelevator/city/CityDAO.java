@@ -2,7 +2,7 @@ package com.techelevator.city;
 
 import java.util.List;
 
-public interface CityDAO {   // interface names tablenameDAO
+public interface CityDAO {   // interface names tablename-DAO
 
 	public void save(City newCity);         // save the to the database when given a completed object
 

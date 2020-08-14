@@ -11,7 +11,7 @@ import org.springframework.jdbc.support.rowset.SqlRowSet;
 // implement the methods for DAO - all interface methods must be implements
 // additional outside the interface may be added
 
-public class JDBCCityDAO implements CityDAO {  // concrete class is named JDBCtablenameDAO
+public class JDBCCityDAO implements CityDAO {  // concrete class is named datasourcetype`Tablename`DAO
 
 	private JdbcTemplate myJdbcTemplate;  // declare an JdbcTemplate variable
 	

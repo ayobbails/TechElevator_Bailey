@@ -32,8 +32,8 @@ public class FranksArrayExample {
 		scores[4] = 40;    // Set the third element to 40
 		scores[5] = 3;     // Set the third element to 3
 		
-		int[] scores2 = {10, 20, 30, 150, 23};     // Define and initial1ze
-		                                           //   The number of elements by the number of initializers
+		int[] scores2 = {10, 20, 30, 150, 23};     // 	Define and initialize
+		                                           //   the number of elements by the number of initializers
 		
 		System.out.println("Element at index 2 in scores2 is: " + scores2[2]);
 	

@@ -1,0 +1,32 @@
+  /**
+   * List all hotels in the system
+   * 
+   * @return
+   */
+  //  The App will call this method through the hotelService to get a list of hotels
+  //   like this: hotelService.listHotels()
+  //
+  //  This method will call an API on our server using HTTP GET request
+  // 
+  // 1. Define an array of Hotel to return to caller (the App)
+  // 2. Call the API on the server to get the list of hotels from the server
+  //    a. Use the restTemplate.exchange method to send an HTTP GET request to the server
+  //       i. exchange methods needs - server/API path                                  - BASE_URL + "hotels" 
+  //                                   HTTP Request type                                - HttpMethod.GET
+  //                                   Entity Object with headers and any data          - makeAuthEntity() - helper method
+  //                                   Class of the object to deserialize the JSON into - Hotel[].class
+  //      ii. When we get back from the server we need to get data out of response body - .getBody()
+  //
+  // 3. Assign the object from API call to our return object
+  //
+  // 4. Return the return object which will either have data (if API call worked) or be null (if API call did not work)
+  //
+  public Hotel[] listHotels() throws HotelServiceException {
+    Hotel[] hotels = null;
+    try {
+      hotels = restTemplate.exchange(BASE_URL + "hotels", HttpMethod.GET, makeAuthEntity(), Hotel[].class).getBody();
+    } catch (RestClientResponseException ex) {
+      throw new HotelServiceException(ex.getRawStatusCode() + " : " + ex.getResponseBodyAsString());
+    }
+    return hotels;
+  }

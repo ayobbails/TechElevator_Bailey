@@ -1,0 +1,29 @@
+<template>
+  <div class="container">
+    <router-view /> <!-- Vue Router is being used to control the interactions on the page -->
+  </div>
+</template>
+
+<script>
+export default {
+
+};
+</script>
+
+<style>
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>

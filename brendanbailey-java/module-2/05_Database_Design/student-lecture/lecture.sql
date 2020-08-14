@@ -14,7 +14,7 @@
 --  CREATE - define a table to the database manager
 --
 --       CREATE TABLE table-name
---       (column-name     datßa-type    NOT NULL,
+--       (column-name     data-type    NOT NULL,
 --        column-name     data-type,
 --        column-name     data-type    DEFAULT   default-value,
 --        column-name     data-type    UNIQUE,
